@@ -1,0 +1,224 @@
+@font-face {
+  font-family: "Salvo Sans";
+  weight: 800;
+  font-style: normal;
+  src: url("../fonts/SalvoSans-Black.eot?") format("eot"), url("../fonts/SalvoSans-Black.woff") format("woff");
+}
+@font-face {
+  font-family: "Salvo Sans";
+  weight: 800;
+  font-style: italic;
+  src: url("../fonts/SalvoSans-BlackItalic.eot?") format("eot"), url("../fonts/SalvoSans-BlackItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Salvo Sans";
+  weight: 600;
+  font-style: normal;
+  src: url("../fonts/SalvoSans-Bold.eot?") format("eot"), url("../fonts/SalvoSans-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Salvo Sans";
+  weight: 600;
+  font-style: italic;
+  src: url("../fonts/SalvoSans-BoldItalic.eot?") format("eot"), url("../fonts/SalvoSans-BoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Salvo Sans";
+  weight: 400;
+  font-style: normal;
+  src: url("../fonts/SalvoSans-Medium.eot?") format("eot"), url("../fonts/SalvoSans-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Salvo Sans";
+  weight: 400;
+  font-style: italic;
+  src: url("../fonts/SalvoSans-MediumItalic.eot?") format("eot"), url("../fonts/SalvoSans-MediumItalic.woff") format("woff");
+}
+.salvo-sans, .caption, body {
+  font-family: "Salvo Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 400;
+  font-size: 28px;
+  color: #00aff0;
+  letter-spacing: 0;
+  padding: 0 1.5rem;
+  padding-bottom: 20vh;
+}
+
+.caption {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+blockquote, h2 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+main {
+  max-width: 60rem;
+  margin: auto;
+  text-align: center;
+}
+
+h1, h2 {
+  font-weight: 400;
+}
+
+h1 {
+  margin-bottom: 15vh;
+  font-size: 28px;
+}
+
+h2 {
+  color: #f04b37;
+  text-align: center;
+}
+
+a {
+  color: #f04b37;
+}
+
+p {
+  margin: 1.5rem 0;
+  line-height: 1.45;
+}
+
+#intro {
+  margin: 1.5rem;
+}
+
+section {
+  margin-top: 20vh;
+}
+
+blockquote {
+  color: #f04b37;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+input.email {
+  border: 0;
+  border-radius: 0;
+  border-bottom: 3px solid #00aff0;
+  width: 500px;
+  height: auto;
+  padding: 0.5rem;
+  font-family: "Salvo Sans";
+  font-size: 28px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #00aff0;
+}
+input.email:focus {
+  outline: none;
+}
+
+input.button {
+  visibility: hidden;
+  margin: 0.5rem auto 1.5rem auto;
+  background: white;
+  display: block;
+  border: 3px solid #f04b37;
+  border-radius: 0;
+  color: #f04b37;
+  font-family: "Salvo Sans";
+  font-size: 28px;
+  padding: 0.5rem 3rem;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+input.button:focus {
+  outline: none;
+}
+input.button:hover {
+  background: #f04b37;
+  color: white;
+}
+
+input.button.visible {
+  visibility: visible;
+}
+
+label {
+  display: none;
+}
+
+.caption {
+  max-width: 80%;
+  margin: auto;
+}
+
+.red {
+  color: #f04b37;
+}
+
+.blue {
+  color: #00aff0;
+}
+
+#thankyou {
+  display: none;
+}
+
+#mc_embed_signup input.mce_inline_error {
+  border-color: #f04b37;
+}
+
+#mc_embed_signup div.mce_inline_error {
+  background: none;
+  color: #f04b37;
+}
+
+@media (max-width: 600px) {
+  .caption {
+    max-width: none;
+    letter-spacing: 0.2px;
+  }
+
+  blockquote {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  main {
+    padding: 0 1rem;
+  }
+
+  #intro {
+    margin: 0;
+    margin-top: 1.5rem;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  input.email {
+    letter-spacing: 0.2px;
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,201 @@
+@import "variables";
+@import "fonts";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+$base: 28px;
+$large: 3rem;
+$small: 16px;
+$pad: 1.5rem;
+
+
+body {
+    @extend .salvo-sans;
+    font-weight: 400;
+    font-size: $base;
+    color: $blue;
+    letter-spacing: 0;
+    padding: 0 $pad;
+    padding-bottom: 20vh;
+}
+
+%small-text{
+	@extend .salvo-sans;
+	font-size: $small;
+	line-height: 1.6;
+}
+
+%large-text{
+	font-size: $large;
+	line-height: 1.2;
+}
+
+
+
+main {
+	max-width: 60rem;
+	margin: auto;
+	text-align: center;
+}
+
+h1, h2{
+	font-weight: 400;
+}
+
+h1{
+	margin-bottom: 15vh;
+	font-size: $base;
+}
+
+h2{
+	color: $red;
+	@extend %large-text;
+	text-align: center;
+}
+
+a{
+	color: $red;
+	// text-decoration: none;
+	// // padding-bottom: 5px;
+	// border-bottom: 2px solid $red;
+}
+
+p{
+	margin: $pad 0;
+	line-height: 1.45;
+}	
+
+
+#intro{
+	margin: $pad;
+}
+
+section{
+	margin-top: 20vh;
+}
+blockquote{
+	color: $red;
+	margin-bottom: 5rem;
+	@extend %large-text;
+	text-align: center;
+}
+
+
+
+
+input.email{
+	border: 0;
+	border-radius: 0;
+	border-bottom: 3px solid $blue;
+	width: 500px;
+	height: auto;
+	padding: .5rem;
+	font-family: 'Salvo Sans';
+	font-size: $base;
+	margin: auto;
+	text-align: center;
+	margin-bottom: 1rem;
+	color: $blue;
+	&:focus{
+		outline: none;
+	}
+}
+
+input.button{
+	visibility: hidden;
+	margin: 0.5rem auto 1.5rem auto;
+	background: white;
+	display: block;
+	border: 3px solid $red;
+	border-radius: 0;
+	color: $red;
+	font-family: 'Salvo Sans';
+	font-size: $base;
+	padding: 0.5rem 3rem;
+	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+
+	&:focus{
+		outline: none;
+	}
+	&:hover{
+		background: $red;
+		color: white;
+	}
+}
+
+input.button.visible{
+	visibility: visible;
+}
+
+
+label{
+	display: none;
+}
+
+.caption{
+	@extend %small-text;
+	max-width: 80%;
+	margin: auto;
+}
+.red{
+	color: $red;
+}
+
+.blue{
+	color: $blue;
+}
+
+#thankyou{
+	display: none;
+}
+
+#mc_embed_signup input.mce_inline_error{
+	border-color: $red;
+}
+#mc_embed_signup div.mce_inline_error{
+	background: none;
+	color: $red;
+}
+@media (max-width: 600px) {
+	.caption{
+		max-width: none;
+		letter-spacing: .2px;
+	}
+
+	blockquote{
+		font-size: 2rem;
+		margin-bottom: 2rem;
+	}
+	body{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	main{
+		padding: 0 1rem;
+	}
+	#intro{
+		margin: 0;
+		margin-top: $pad;
+	}
+
+	h1{
+		font-size: $small;
+	}
+	p {
+		font-size: 1.5rem;
+	}
+	input.email{
+		letter-spacing: .2px;
+		width: 100%;
+		font-size: $small;
+	}
+
+
+}
+

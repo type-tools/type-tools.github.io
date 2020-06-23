@@ -1,0 +1,12 @@
+# macos
+
+.DS_Store
+
+# Node
+
+node_modules
+
+# Sass / SCSS caches
+
+.gulp-scss-cache
+.sass-cache

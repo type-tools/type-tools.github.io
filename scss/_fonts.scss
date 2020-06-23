@@ -1,0 +1,55 @@
+// Salvo Black
+@font-face {
+	font-family: "Salvo Sans";
+    weight: 800;
+    font-style: normal;
+	src: url("../fonts/SalvoSans-Black.eot?") format("eot"),
+		 url("../fonts/SalvoSans-Black.woff") format("woff")
+}
+
+@font-face {
+	font-family: "Salvo Sans";
+    weight: 800;
+    font-style: italic;
+	src: url("../fonts/SalvoSans-BlackItalic.eot?") format("eot"),
+		 url("../fonts/SalvoSans-BlackItalic.woff") format("woff")
+}
+
+// Salvo Sans Bold
+@font-face {
+	font-family: "Salvo Sans";
+    weight: 600;
+    font-style: normal;
+	src: url("../fonts/SalvoSans-Bold.eot?") format("eot"),
+		 url("../fonts/SalvoSans-Bold.woff") format("woff")
+}
+
+@font-face {
+	font-family: "Salvo Sans";
+    weight: 600;
+    font-style: italic;
+	src: url("../fonts/SalvoSans-BoldItalic.eot?") format("eot"),
+		 url("../fonts/SalvoSans-BoldItalic.woff") format("woff")
+}
+
+// Salvo Sans Medium
+@font-face {
+	font-family: "Salvo Sans";
+    weight: 400;
+    font-style: normal;
+	src: url("../fonts/SalvoSans-Medium.eot?") format("eot"),
+		 url("../fonts/SalvoSans-Medium.woff") format("woff")
+}
+
+@font-face {
+	font-family: "Salvo Sans";
+    weight: 400;
+    font-style: italic;
+	src: url("../fonts/SalvoSans-MediumItalic.eot?") format("eot"),
+		 url("../fonts/SalvoSans-MediumItalic.woff") format("woff")
+}
+
+.salvo-sans {
+    font-family: "Salvo Sans", sans-serif;
+}
+
